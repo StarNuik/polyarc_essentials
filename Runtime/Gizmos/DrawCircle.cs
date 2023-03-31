@@ -7,7 +7,6 @@ namespace PolygonArcana.Utilities
 	public partial class Gizmos
 	{
 		const int circleResolution = 16;
-		// const int circleResolution = 4;
 
 		public static void DrawCircle(Vector3 center, float radius) => DrawCircle(center, radius, Quaternion.identity);
 		public static void DrawCircle(Vector3 center, float radius, Vector3 up) => DrawCircle(center, radius, Quaternion.LookRotation(Vector3.up, up));
