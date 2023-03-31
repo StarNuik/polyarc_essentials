@@ -4,7 +4,6 @@ using UnityEditor;
 
 namespace PolygonArcana.Essentials
 {
-	#if UNITY_EDITOR
 	public class MatrixOverrideHandles : IDisposable
 	{
 		private bool wasDisposed;
@@ -32,5 +31,4 @@ namespace PolygonArcana.Essentials
 			wasDisposed = true;
 		}
 	}
-	#endif
 }

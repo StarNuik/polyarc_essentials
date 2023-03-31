@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PolygonArcana.Essentials
 {
-	public partial class Gizmos
+	public partial class GizmosExt
 	{
+		//TODO .matrix usage
+		
 		public static void DrawRect(Vector3 center, Rect rect) => DrawRect(center, rect, Quaternion.identity);
 		public static void DrawRect(Vector3 center, Rect rect, Vector3 up) => DrawRect(center, rect, Quaternion.LookRotation(Vector3.up, up));
 		public static void DrawRect(Vector3 center, Rect rect, Quaternion rotation)

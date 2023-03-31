@@ -1,12 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PolygonArcana.Essentials
 {
-	using Debug = UnityEngine.Debug;
-	public partial class Gizmos
+	public partial class GizmosExt
 	{
+		//TODO .matrix usage (is seemingly random)
+
 		const float arrowStemWidth = 0.6f;
 		const float arrowHeadSize = 1.75f;
 		static readonly Vector3 arrowUp = Vector3.up;
@@ -60,7 +59,5 @@ namespace PolygonArcana.Essentials
 
 			matrix = matrixOriginal;
 		}
-
-		
 	}
 }

@@ -1,10 +1,8 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PolygonArcana.Essentials
 {
-	public partial class Gizmos
+	public partial class GizmosExt
 	{
 		public static void DrawLoop(Vector3[] points)
 		{

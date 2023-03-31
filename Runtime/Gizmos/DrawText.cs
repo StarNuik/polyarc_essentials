@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 #if UNITY_EDITOR
@@ -8,7 +6,7 @@ using UnityEditor;
 
 namespace PolygonArcana.Essentials
 {
-	public partial class Gizmos
+	public partial class GizmosExt
 	{
 		static readonly GUIStyle textStyle = GUI.skin.label;
 

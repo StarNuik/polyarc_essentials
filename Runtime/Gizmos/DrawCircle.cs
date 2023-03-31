@@ -1,11 +1,11 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 namespace PolygonArcana.Essentials
 {
-	public partial class Gizmos
+	public partial class GizmosExt
 	{
+		//TODO .matrix usage
+
 		const int circleResolution = 16;
 
 		public static void DrawCircle(Vector3 center, float radius) => DrawCircle(center, radius, Quaternion.identity);
