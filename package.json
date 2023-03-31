@@ -1,0 +1,16 @@
+{
+	"name": "com.polygonarcana.essentials",
+	"version": "0.1.0",
+	"displayName": "Polygon Essentials",
+	"description": "A collection of useful scripts",
+	"unity": "2019.1",
+	"__documentationUrl": "https://example.com/",
+	"__changelogUrl": "https://example.com/changelog.html",
+	"license": "MIT",
+	"author":
+	{
+		"name": "StarNuik",
+		"email": "starnuik@gmail.com",
+		"url": "https://github.com/starnuik"
+	}
+}
