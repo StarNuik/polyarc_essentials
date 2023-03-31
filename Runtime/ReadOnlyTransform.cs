@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Assertions;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	public struct ReadOnlyTransform
 	{
@@ -49,10 +49,5 @@ namespace PolygonArcana.Utilities
 
 		public static bool operator ==(ReadOnlyTransform left, ReadOnlyTransform right) => left._transform == right._transform;
 		public static bool operator !=(ReadOnlyTransform left, ReadOnlyTransform right) => left._transform != right._transform;
-	}
-
-	public static class TransformExtension
-	{
-		public static ReadOnlyTransform AsReadOnly(this Transform transform) => new ReadOnlyTransform(transform);
 	}
 }

@@ -1,15 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using SF = UnityEngine.SerializeField;
-using Logger = PolygonArcana.Utilities.Logger;
-using Zenject;
-using PolygonArcana.Utilities;
 using UnityEngine.Assertions;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
-	public class CoroutineServiceDriver : MonoBehaviour
+	internal class CoroutineServiceDriver : MonoBehaviour
 	{
 		private static MonoBehaviour driver;
 
@@ -20,15 +16,16 @@ namespace PolygonArcana.Utilities
 			if (driver != null) return driver;
 
 			var go = new GameObject(nameof(CoroutineServiceDriver));
+			Object.DontDestroyOnLoad(go);
+
 			var self = go.AddComponent<CoroutineServiceDriver>();
 			driver = self;
+			
 			return driver;
 		}
 
 		private void OnDestroy()
 		{
-			Assert.IsTrue(driver == this);
-
 			driver = null;
 		}
 	}

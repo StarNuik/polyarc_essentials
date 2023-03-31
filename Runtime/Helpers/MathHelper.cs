@@ -2,10 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using PolygonArcana.Utilities;
-using SF = UnityEngine.SerializeField;
-using Logger = PolygonArcana.Utilities.Logger;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	public static class MathHelper
 	{

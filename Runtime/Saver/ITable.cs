@@ -1,9 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PolygonArcana.Utilities;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	public interface ITable
 	{

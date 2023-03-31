@@ -1,14 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PolygonArcana.Utilities;
-using SF = UnityEngine.SerializeField;
 using System.Runtime.CompilerServices;
 using System.IO;
 using System.Linq;
 using System.Globalization;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	public static class Logger
 	{
@@ -55,6 +53,7 @@ namespace PolygonArcana.Utilities
 			Debug.Log(result);
 		}
 
+		#region Private
 		private static string ToString(string expr, object arg)
 		{
 			bool isLiteral = !IsValidIdentifier(expr[0], true);
@@ -116,5 +115,6 @@ namespace PolygonArcana.Utilities
 					return false;
 			}
 		}
+		#endregion
 	}
 }

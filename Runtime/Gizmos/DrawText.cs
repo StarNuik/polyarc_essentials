@@ -6,7 +6,7 @@ using UnityEngine;
 using UnityEditor;
 #endif
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	public partial class Gizmos
 	{

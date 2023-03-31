@@ -1,15 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using PolygonArcana.Utilities;
-using SF = UnityEngine.SerializeField;
-using Logger = PolygonArcana.Utilities.Logger;
 using UnityEngine.Assertions;
 using System.Reflection;
 using System.Linq;
 using System;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	public partial class Saver
 	{

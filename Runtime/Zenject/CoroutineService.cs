@@ -1,12 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using Logger = PolygonArcana.Utilities.Logger;
-using Zenject;
-using PolygonArcana.Utilities;
-using UnityEngine.Assertions;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	public class CoroutineService
 	{

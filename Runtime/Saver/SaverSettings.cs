@@ -1,13 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using SF = UnityEngine.SerializeField;
-using Logger = PolygonArcana.Utilities.Logger;
-using Zenject;
-using PolygonArcana.Utilities;
 using UnityEngine.Assertions;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	[CreateAssetMenu(menuName = ("Settings/" + nameof(SaverSettings)), fileName = nameof(SaverSettings))]
 	public class SaverSettings : ScriptableObject

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UGizmos = UnityEngine.Gizmos;
 
-namespace PolygonArcana.Utilities
+namespace PolygonArcana.Essentials
 {
 	public static partial class Gizmos
 	{
