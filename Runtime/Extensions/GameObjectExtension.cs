@@ -1,15 +1,13 @@
 using UnityEngine;
-using UnityEngine.Assertions;
 using System.Runtime.CompilerServices;
 
 namespace PolygonArcana.Essentials
 {
-	public static class LayerMaskExtension
+	public static class GameObjectExtension
 	{
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		public static bool Contains(this LayerMask layerMask, GameObject gameObject)
+		public static bool MaskOverlaps(this GameObject gameObject, LayerMask layerMask)
 		{
-			Assert.IsNotNull(gameObject);
 			return (gameObject.layer & layerMask.value) > 0;
 		}
 	}

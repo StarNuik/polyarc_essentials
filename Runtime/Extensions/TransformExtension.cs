@@ -1,11 +1,14 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
+using System.Runtime.CompilerServices;
 
 namespace PolygonArcana.Essentials
 {
 	public static class TransformExtension
 	{
-		public static ReadOnlyTransform AsReadOnly(this Transform transform) => new ReadOnlyTransform(transform);
+		[MethodImpl(MethodImplOptions.AggressiveInlining)]
+		public static ReadOnlyTransform AsReadOnly(this Transform transform)
+		{
+			return new ReadOnlyTransform(transform);
+		}
 	}
 }

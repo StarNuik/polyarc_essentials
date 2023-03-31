@@ -1,28 +1,35 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using System;
-
-#if UNITY_EDITOR
 using UnityEditor;
-#endif
 
 namespace PolygonArcana.Essentials
 {
 	#if UNITY_EDITOR
 	public class MatrixOverrideHandles : IDisposable
 	{
+		private bool wasDisposed;
 		private Matrix4x4 oldMatrix;
 
 		public MatrixOverrideHandles(Matrix4x4 matrix)
 		{
 			oldMatrix = Handles.matrix;
+			wasDisposed = false;
+
 			Handles.matrix = matrix;
+		}
+
+		~MatrixOverrideHandles()
+		{
+			Dispose();
 		}
 
 		public void Dispose()
 		{
+			if (wasDisposed) return;
+
 			Handles.matrix = oldMatrix;
+
+			wasDisposed = true;
 		}
 	}
 	#endif
