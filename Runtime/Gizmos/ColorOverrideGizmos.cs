@@ -7,26 +7,26 @@ namespace PolygonArcana.Essentials
 	public partial class GizmosExt
 	{
 		[MethodImpl(MethodImplOptions.AggressiveInlining)]
-		public static MatrixOverrideGizmos WithMatrix(Matrix4x4 matrix)
+		public static ColorOverrideGizmos WithColor(Color color)
 		{
-			return new MatrixOverrideGizmos(matrix);
+			return new ColorOverrideGizmos(color);
 		}
 	}
 
-	public class MatrixOverrideGizmos : IDisposable
+	public class ColorOverrideGizmos : IDisposable
 	{
 		private bool wasDisposed;
-		private Matrix4x4 oldMatrix;
+		private Color oldColor;
 
-		public MatrixOverrideGizmos(Matrix4x4 matrix)
+		public ColorOverrideGizmos(Color color)
 		{
-			oldMatrix = GizmosExt.matrix;
+			oldColor = GizmosExt.color;
 			wasDisposed = false;
 
-			GizmosExt.matrix = matrix;
+			GizmosExt.color = color;
 		}
 
-		~MatrixOverrideGizmos()
+		~ColorOverrideGizmos()
 		{
 			Dispose();
 		}
@@ -35,7 +35,7 @@ namespace PolygonArcana.Essentials
 		{
 			if (wasDisposed) return;
 
-			GizmosExt.matrix = oldMatrix;
+			GizmosExt.color = oldColor;
 
 			wasDisposed = true;
 		}
